@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Asteroids - GitHub Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div id="gameOver" class="hidden">
+            <h1>GAME OVER</h1>
+            <p id="finalScore">SCORE: 0</p>
+            <button onclick="resetGame()">RESTART</button>
+        </div>
+        <div class="ui-layer">
+            <div id="score">SCORE: 0000</div>
+            <div id="level">LEVEL: 1</div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
